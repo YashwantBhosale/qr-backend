@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 const corsOptions = {
-    origin: "https://yashwantbhosale.github.io/qr-frontend/"
+    origin: "https://yashwantbhosale.github.io/qr-frontend"
 };
 
 app.use(express.json());
