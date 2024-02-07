@@ -8,8 +8,12 @@ import { fileURLToPath } from 'url';
 const app = express();
 const PORT = 3000;
 
+const corsOptions = {
+    origin: "https://yashwantbhosale.github.io/qr-frontend/"
+};
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 const __filename = fileURLToPath(import.meta.url).replace(/\\/g, '/'); 
 const __dirname = path.dirname(__filename).replace(/\\/g, '/');
